@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# First install docker engine
+# First install docker engine, https://docs.docker.com/engine/install/centos/#install-using-the-repository
     # Remove any existing docker installation
     sudo yum remove docker \
         docker-client \
@@ -25,4 +25,9 @@
     # Verify docker installation
     sudo docker run hello-world
 
-# Install docker compose
+# Install docker compose, https://docs.docker.com/compose/install/linux/#install-using-the-repository
+    sudo yum update
+    sudo yum install docker-compose-plugin
+
+    # Verify docker compose install
+    docker compose version
