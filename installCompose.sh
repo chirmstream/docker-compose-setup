@@ -31,3 +31,5 @@
 
     # Verify docker compose install
     docker compose version
+
+printf "\n Use 'docker compose', 'docker-compose' is depreciated! \n"
