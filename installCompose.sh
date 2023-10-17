@@ -32,4 +32,8 @@
     # Verify docker compose install
     docker compose version
 
+    # Start docker on boot
+    sudo systemctl enable docker.service
+    sudo systemctl enable containerd.service
+
 printf "\n Use 'docker compose', 'docker-compose' is depreciated! \n"
